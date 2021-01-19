@@ -15,6 +15,10 @@ class CreateFeedbackTable extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('phone');
+            $table->boolean('viewed')->default(false);
+            $table->text('message');
             $table->timestamps();
         });
     }

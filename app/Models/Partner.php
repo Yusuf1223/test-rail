@@ -5,19 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Feedback extends Model
+class Partner extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
+    protected $fillable=[
         'name',
-        'phone',
-        'message',
-        'viewed'
-    ];
-
-    protected $casts = [
-        'viewed' => 'boolean'
     ];
 
     public function image()
